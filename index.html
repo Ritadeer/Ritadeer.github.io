@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>welcome</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mystyle.css" rel="stylesheet" type="text/css" >
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script type="text/javascript" src="js/jquery1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.box .box1').mouseover(function(){
+    $(this).stop().animate({"top":"-544px"}, 200); 
+  })
+  $('.box .box1').mouseout(function(){
+    $(this).stop().animate({"top":"0"}, 200); 
+  })
+})
+</script>
+
+  </head>
+
+  <body>
+<!--页面顶部导航栏-->
+      <nav>
+        <div class="topbar">
+        <ul class="nav nav-tabs ">
+        <li class="active"><a href="#">首页</a></li>
+        <li><a href="introduction.html">简历</a></li>
+        <li><a href="blog.html">动态</a></li>
+        <li><a href="#">联系我</a></li>
+        </ul>
+       </div>
+      </nav>
+     
+<!--AB大块区
+      <div class="corepart">
+          <a href="introduction.html">
+          <span id="top_left" >
+                <p>
+                   A
+                </p>
+          </span>
+          </a>
+          <a href="blog.html">
+           <span id="top_right">
+                <p>
+                  B
+                </p>
+                 </span>
+          </a>
+      </div>-->
+     <div class="corepart">
+  <ul class="box">
+                    <li>
+                        <div class="box1">
+                            <div class="toll_img"><img src="img/AA1.jpg" width="544" height="544"/></div>
+                            <div class="toll_info"><a href="introduction.html" ><img src="img/AA2.jpg" height="544" width="544" /></a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box1">
+                            <div class="toll_img"><img src="img/BB1.jpg" width="544" height="544"/></div>
+                            <div class="toll_info"><a href="blog.html" ><img src="img/BB2.jpg" height="544" width="544" /></a></div>
+                        </div>
+                    </li>
+ </ul>  
+ </div>
+<!--底部栏-->
+      <div class="bottompart">
+
+            <a class="smallogo" href="#">nianyi</a>
+            <table>
+                <tr>Concept &amp; design by wangtingwei</tr>&nbsp
+                <tr>Contact: wangtingweibupt@163.com</tr>&nbsp
+                <tr class="lastitem">Copyright © 2016 nianyi</tr>
+            </table>
+
+      </div>
+
+  </body>
+</html>
