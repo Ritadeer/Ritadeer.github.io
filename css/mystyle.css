@@ -107,6 +107,7 @@ body{
 		left: 45%;
     }
 
+
 /*introduction*/
 .intropaper{
 	width: 60%;
@@ -208,4 +209,7 @@ font-size: 15px;
 
     }
 
+}
+video{
+	width: 100%;
 }
